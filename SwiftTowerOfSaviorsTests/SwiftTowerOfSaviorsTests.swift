@@ -2,7 +2,7 @@
 //  SwiftTowerOfSaviorsTests.swift
 //  SwiftTowerOfSaviorsTests
 //
-//  Created by Willy Liu on 2014/7/7.
+//  Created by Willy Liu on 2014/7/4.
 //  Copyright (c) 2014年 Willy Liu. All rights reserved.
 //
 
@@ -19,17 +19,45 @@ class SwiftTowerOfSaviorsTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+	
+	func testChainIsIntersectedWithSameStone() {
+		let stone = RuneStone(column: 0, row: 0, runeStoneType: RuneStoneType.random())
+		let chain = Chain(chainType: .Horizontal)
+		chain.addRuneStone(stone)
+		let chain2 = Chain(chainType: .Vertical)
+		chain2.addRuneStone(stone)
+		XCTAssertTrue(chain.isIntersectedWith(chain2), "Must be intersected")
+	}
+	
+	func testChainIsIntersectedWithTwoStones() {
+		let stone = RuneStone(column: 0, row: 0, runeStoneType: RuneStoneType.random())
+		let chain = Chain(chainType: .Horizontal)
+		chain.addRuneStone(stone)
+		let stone2 = RuneStone(column: 0, row: 1, runeStoneType: RuneStoneType.random())
+		let chain2 = Chain(chainType: .Vertical)
+		chain2.addRuneStone(stone2)
+		XCTAssertFalse(chain.isIntersectedWith(chain2), "Must not be intersected")
+	}
+	
+	func testUnionChainWithSameStone() {
+		let stone = RuneStone(column: 0, row: 0, runeStoneType: RuneStoneType.random())
+		let chain = Chain(chainType: .Horizontal)
+		chain.addRuneStone(stone)
+		let chain2 = Chain(chainType: .Vertical)
+		chain2.addRuneStone(stone)
+		let unionChain = chain.unionChainWith(chain2)
+		XCTAssertNotNil(unionChain, "Chian must exist")
+		XCTAssertEqual(unionChain.runeStones.count, 1, "Union chain must have one stone")
+	}
+	
+	func testUnionChainWithTwoStones() {
+		let stone = RuneStone(column: 0, row: 0, runeStoneType: RuneStoneType.random())
+		let chain = Chain(chainType: .Horizontal)
+		chain.addRuneStone(stone)
+		let stone2 = RuneStone(column: 0, row: 1, runeStoneType: RuneStoneType.random())
+		let chain2 = Chain(chainType: .Vertical)
+		chain2.addRuneStone(stone2)
+		let unionChain = chain.unionChainWith(chain2)
+		XCTAssertNil(unionChain, "Chian must not exist")
+	}
 }

@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B8A34D7196D307C004615F6 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A34D6196D307C004615F6 /* ProgressBar.swift */; };
+		8B9297CC196BC35800AAF77F /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9297CB196BC35800AAF77F /* Chain.swift */; };
+		8B9297CD196BC35800AAF77F /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9297CB196BC35800AAF77F /* Chain.swift */; };
 		8BDDEC1C196A68D50056BCE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC1B196A68D50056BCE8 /* AppDelegate.swift */; };
 		8BDDEC1E196A68D50056BCE8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8BDDEC1D196A68D50056BCE8 /* GameScene.sks */; };
 		8BDDEC20196A68D50056BCE8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC1F196A68D50056BCE8 /* GameScene.swift */; };
 		8BDDEC22196A68D50056BCE8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC21196A68D50056BCE8 /* GameViewController.swift */; };
 		8BDDEC25196A68D50056BCE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDDEC23196A68D50056BCE8 /* Main.storyboard */; };
 		8BDDEC27196A68D50056BCE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BDDEC26196A68D50056BCE8 /* Images.xcassets */; };
-		8BDDEC33196A68D50056BCE8 /* SwiftTowerOfSaviorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC32196A68D50056BCE8 /* SwiftTowerOfSaviorsTests.swift */; };
+		8BDDEC3D196A69580056BCE8 /* RuneStone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC3C196A69580056BCE8 /* RuneStone.swift */; };
+		8BDDEC3E196A695C0056BCE8 /* RuneStone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC3C196A69580056BCE8 /* RuneStone.swift */; };
+		8BDDEC40196A69890056BCE8 /* SwiftTowerOfSaviorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC3F196A69890056BCE8 /* SwiftTowerOfSaviorsTests.swift */; };
+		8BDDEC42196A6E9F0056BCE8 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC41196A6E9F0056BCE8 /* Array2D.swift */; };
+		8BDDEC44196A6EBE0056BCE8 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC43196A6EBE0056BCE8 /* Set.swift */; };
+		8BDDEC46196A6EE30056BCE8 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC45196A6EE30056BCE8 /* Level.swift */; };
+		8BDDEC47196A700C0056BCE8 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC41196A6E9F0056BCE8 /* Array2D.swift */; };
+		8BDDEC48196A700F0056BCE8 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC43196A6EBE0056BCE8 /* Set.swift */; };
+		8BDDEC49196A70120056BCE8 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC45196A6EE30056BCE8 /* Level.swift */; };
+		8BDDEC4B196A87B90056BCE8 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 8BDDEC4A196A87B90056BCE8 /* Sprites.atlas */; };
+		8BDDEC4D196A941D0056BCE8 /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC4C196A941D0056BCE8 /* Swap.swift */; };
+		8BDDEC4E196A942E0056BCE8 /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDEC4C196A941D0056BCE8 /* Swap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B8A34D6196D307C004615F6 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		8B9297CB196BC35800AAF77F /* Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
 		8BDDEC16196A68D50056BCE8 /* SwiftTowerOfSaviors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTowerOfSaviors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDDEC1A196A68D50056BCE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BDDEC1B196A68D50056BCE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +53,13 @@
 		8BDDEC26196A68D50056BCE8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8BDDEC2C196A68D50056BCE8 /* SwiftTowerOfSaviorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTowerOfSaviorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDDEC31196A68D50056BCE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BDDEC32196A68D50056BCE8 /* SwiftTowerOfSaviorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTowerOfSaviorsTests.swift; sourceTree = "<group>"; };
+		8BDDEC3C196A69580056BCE8 /* RuneStone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuneStone.swift; sourceTree = "<group>"; };
+		8BDDEC3F196A69890056BCE8 /* SwiftTowerOfSaviorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTowerOfSaviorsTests.swift; sourceTree = "<group>"; };
+		8BDDEC41196A6E9F0056BCE8 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		8BDDEC43196A6EBE0056BCE8 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		8BDDEC45196A6EE30056BCE8 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		8BDDEC4A196A87B90056BCE8 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		8BDDEC4C196A941D0056BCE8 /* Swap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +102,20 @@
 			isa = PBXGroup;
 			children = (
 				8BDDEC1B196A68D50056BCE8 /* AppDelegate.swift */,
+				8BDDEC41196A6E9F0056BCE8 /* Array2D.swift */,
+				8B9297CB196BC35800AAF77F /* Chain.swift */,
 				8BDDEC1D196A68D50056BCE8 /* GameScene.sks */,
 				8BDDEC1F196A68D50056BCE8 /* GameScene.swift */,
 				8BDDEC21196A68D50056BCE8 /* GameViewController.swift */,
-				8BDDEC23196A68D50056BCE8 /* Main.storyboard */,
 				8BDDEC26196A68D50056BCE8 /* Images.xcassets */,
+				8BDDEC45196A6EE30056BCE8 /* Level.swift */,
+				8BDDEC23196A68D50056BCE8 /* Main.storyboard */,
+				8B8A34D6196D307C004615F6 /* ProgressBar.swift */,
+				8BDDEC3C196A69580056BCE8 /* RuneStone.swift */,
+				8BDDEC43196A6EBE0056BCE8 /* Set.swift */,
+				8BDDEC4A196A87B90056BCE8 /* Sprites.atlas */,
 				8BDDEC19196A68D50056BCE8 /* Supporting Files */,
+				8BDDEC4C196A941D0056BCE8 /* Swap.swift */,
 			);
 			path = SwiftTowerOfSaviors;
 			sourceTree = "<group>";
@@ -101,7 +131,7 @@
 		8BDDEC2F196A68D50056BCE8 /* SwiftTowerOfSaviorsTests */ = {
 			isa = PBXGroup;
 			children = (
-				8BDDEC32196A68D50056BCE8 /* SwiftTowerOfSaviorsTests.swift */,
+				8BDDEC3F196A69890056BCE8 /* SwiftTowerOfSaviorsTests.swift */,
 				8BDDEC30196A68D50056BCE8 /* Supporting Files */,
 			);
 			path = SwiftTowerOfSaviorsTests;
@@ -197,6 +227,7 @@
 			files = (
 				8BDDEC27196A68D50056BCE8 /* Images.xcassets in Resources */,
 				8BDDEC1E196A68D50056BCE8 /* GameScene.sks in Resources */,
+				8BDDEC4B196A87B90056BCE8 /* Sprites.atlas in Resources */,
 				8BDDEC25196A68D50056BCE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,9 +246,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BDDEC4D196A941D0056BCE8 /* Swap.swift in Sources */,
 				8BDDEC20196A68D50056BCE8 /* GameScene.swift in Sources */,
+				8BDDEC46196A6EE30056BCE8 /* Level.swift in Sources */,
+				8B9297CC196BC35800AAF77F /* Chain.swift in Sources */,
+				8BDDEC3D196A69580056BCE8 /* RuneStone.swift in Sources */,
+				8BDDEC44196A6EBE0056BCE8 /* Set.swift in Sources */,
 				8BDDEC22196A68D50056BCE8 /* GameViewController.swift in Sources */,
 				8BDDEC1C196A68D50056BCE8 /* AppDelegate.swift in Sources */,
+				8B8A34D7196D307C004615F6 /* ProgressBar.swift in Sources */,
+				8BDDEC42196A6E9F0056BCE8 /* Array2D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BDDEC33196A68D50056BCE8 /* SwiftTowerOfSaviorsTests.swift in Sources */,
+				8BDDEC48196A700F0056BCE8 /* Set.swift in Sources */,
+				8BDDEC40196A69890056BCE8 /* SwiftTowerOfSaviorsTests.swift in Sources */,
+				8B9297CD196BC35800AAF77F /* Chain.swift in Sources */,
+				8BDDEC4E196A942E0056BCE8 /* Swap.swift in Sources */,
+				8BDDEC47196A700C0056BCE8 /* Array2D.swift in Sources */,
+				8BDDEC49196A70120056BCE8 /* Level.swift in Sources */,
+				8BDDEC3E196A695C0056BCE8 /* RuneStone.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +449,7 @@
 				8BDDEC38196A68D50056BCE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BDDEC39196A68D50056BCE8 /* Build configuration list for PBXNativeTarget "SwiftTowerOfSaviorsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +458,7 @@
 				8BDDEC3B196A68D50056BCE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
