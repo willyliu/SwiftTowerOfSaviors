@@ -18,7 +18,10 @@ class ProgressBar: SKCropNode {
 		self.maskNode.xScale = newValue
 	}
 	}
-	init() {
+	required init(coder aDecoder: NSCoder!) {
+		super.init(coder: aDecoder)
+	}
+	override init() {
 		super.init()
 		let maskNode = SKSpriteNode(color: UIColor.whiteColor(), size: CGSizeMake(UIScreen.mainScreen().bounds.size.width, 5))
 		maskNode.anchorPoint = CGPoint(x:0.0,y:0.0)

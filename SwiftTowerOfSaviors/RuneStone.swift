@@ -25,7 +25,7 @@ enum RuneStoneType: Int, Printable {
 	}
 
 	static func textureForRuneStoneType(runeStoneType: RuneStoneType) -> SKTexture {
-		if !texturesForRuneStoneType[runeStoneType.spriteName] {
+		if texturesForRuneStoneType[runeStoneType.spriteName] == nil {
 			texturesForRuneStoneType[runeStoneType.spriteName] = SKTexture(imageNamed: runeStoneType.spriteName)
 		}
 		return texturesForRuneStoneType[runeStoneType.spriteName]!

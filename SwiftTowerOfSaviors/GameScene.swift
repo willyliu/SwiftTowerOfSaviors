@@ -23,7 +23,11 @@ class GameScene: SKScene {
 	var touchBeginTime: NSTimeInterval = 0.0
 	let progressBar = ProgressBar()
 	
-	init(size: CGSize) {
+	required init(coder aDecoder: NSCoder!) {
+		super.init(coder: aDecoder)
+	}
+	
+	override init(size: CGSize) {
 		super.init(size: size)
 		
 		anchorPoint = CGPoint(x: 0.0, y: 0.0)
@@ -326,7 +330,7 @@ class GameScene: SKScene {
 	
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
-		if movingStone {
+		if movingStone != nil {
 			if touchBeginTime == 0.0 {
 				touchBeginTime = currentTime
 				if !progressBar.parent {

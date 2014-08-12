@@ -77,8 +77,8 @@ class Chain: Hashable, Printable {
 			resultChain.runeStones.append(stone)
 		}
 		for stone in anotherChain.runeStones {
-			if find(resultChain.runeStones, stone) {
-				resultChain.pivotRuneStone = stone
+			if let foundIndex = find(resultChain.runeStones, stone) {
+				resultChain.pivotRuneStone = resultChain.runeStones[foundIndex]
 			}
 			else {
 				resultChain.runeStones.append(stone)
